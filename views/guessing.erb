@@ -1,0 +1,33 @@
+<center>
+<body class="background">
+<h4 class="h4style"><%=blank%></h4>
+<h3 class="h3style"><%= p2_name%> Start guessing the word.</h3>
+<form method = "post" action = "guess">
+<input type = "text" name = "letter">
+<h2 class="h2style"><%=message%></h2>
+<h2 class="h2style"><%=message2%></h2>
+<h3 class="h3style"><input type = "hidden" name = "player1" value = "<%= p1_name%>"></h3>
+<h3 class="h3style"><input type = "hidden" name = "player2" value = "<%= p2_name%>"></h3>
+<h3 class="h3style"><input type = "submit"  value = "Enter Guess"></h3>
+<h4 class="h4style"> Guessed - <%=array%></h4>
+<h1 class="h1style"><%=counter%> </h1>
+</form>
+
+
+
+<%if counter == 0 %> 
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Hangman-0.png"> 
+<%elsif counter == 1 %>
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Hangman-1.png"> 
+<%elsif counter == 2 %>
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Hangman-2.png"> 
+<%elsif counter == 3 %>
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Hangman-3.png"> 
+<%elsif counter == 4 %>
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Hangman-4.png"> 
+<%elsif counter == 5 %>
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Hangman-5.png"> 
+<%elsif counter == 6 %>
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Hangman-6.png"> 
+<%end%>
+</center>
