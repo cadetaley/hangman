@@ -1,15 +1,30 @@
-.background {background-image:url("http://38.media.tumblr.com/6567b2f1052d48eb71e8bbcea161d395/tumblr_ng8t7yrDBY1qks6gfo1_400.gif");}
+.background {background-image: url("https://twistedsifter.files.wordpress.com/2013/05/animated-gifs-of-fighting-game-backgrounds-25.gif?w=800&h=336");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
 .h1style{
-	color:lightgreen;
+	color: red;
 }
 .h2style{
-	color:lightgreen;
+	color: blue;
 }
 .h3style{
 	color:lightgreen;
 }
 .h4style{
-	color:lightgreen;
+	color: black;
+	border: 1px solid black;
+	border-top-style: solid;
+	border-left-style: solid;
+	border-right-style:solid;
+    outline-style: double;
+    outline-color: darkblue; 
+    width:20%;
 }
 .hangman{
 	color:lightgreen;
